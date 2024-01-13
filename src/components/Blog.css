@@ -10,6 +10,6 @@
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: url('blogBg.svg') center/cover no-repeat fixed;
+    background: url('blackBg.svg') center/cover no-repeat fixed;
     position: relative;
 }
