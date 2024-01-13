@@ -1,0 +1,40 @@
+nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 9%;
+    background: transparent;
+}
+.logo{
+  width: 10rem;
+  height: 5rem;
+}
+.nav-list{
+    display: flex;
+} 
+.nav-list .list-items{
+    color: rgb(63, 61, 7);
+    margin-left: 60px;
+    font-size: 25px;
+    border-bottom: 2px solid transparent;
+    transition:  all .55s ease;
+    padding-right: 30px;
+}
+.link{
+    font-style: none;
+    color: rgb(49, 50, 6);
+    font-weight: 600px;
+}
+li:hover{
+    background:transparent;
+
+    transform: translateX(-8px);
+}
+.link:hover{
+    color: brown;
+} 
