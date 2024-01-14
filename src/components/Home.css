@@ -12,7 +12,10 @@
     width: 100%;
     min-height: 100vh;
     /* background: linear-gradient(245.59deg, #4d9559 0%,#38703d 28.53%,#133917 75.52%); */
-    background: url('bg.svg') center/cover no-repeat fixed;
+    background: url('bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
     display: grid;
     grid-template-columns: repeat(2,1,fr);
