@@ -22,7 +22,9 @@
     align-items: center;
     gap: 2rem;
 }
-
+.nwrap{
+    white-space: nowrap;
+}
 section{
     padding: 0 19%;
 }
@@ -55,6 +57,7 @@ margin-bottom: 40px;
 }
 .txt{
     user-select: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.491);
 }
 .txt:hover {
     background:transparent;
@@ -76,4 +79,10 @@ margin-bottom: 40px;
 .icons .media-icons:hover{
     color: #4d9559;
     transform: translateY(-5px);
+}
+
+@media screen and (max-width:800px) {
+    .main-page-content{
+        margin-left:20% ;
+    }
 }

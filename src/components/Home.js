@@ -14,9 +14,9 @@ export default class Home extends Component {
             <h5 className='txt'>Hey! there</h5>
             <h4 className='txt'>I am </h4>
             <h1 className='txt'>Dhruv</h1>
-            <p className='txt'>Part time student, Full time developer.</p>
+            <p className='txt'><span className='nwrap'>Part time student,</span> <span className='nwrap'> Full time developer.</span></p>
           </div>
-        </section>
+        </section> 
 
         <div className='icons'>
         <a href='https://www.instagram.com/dhruv.verma___/' target='_blank' rel='noreferrer'><InstagramIcon className='media-icons instagram'/></a>
