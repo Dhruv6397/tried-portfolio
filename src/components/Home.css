@@ -17,7 +17,8 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    display: grid;
+    background-attachment: fixed;
+    display: flex;
     grid-template-columns: repeat(2,1,fr);
     align-items: center;
     gap: 2rem;

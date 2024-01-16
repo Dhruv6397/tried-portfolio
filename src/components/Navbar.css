@@ -10,9 +10,12 @@ nav{
     padding: 50px 9%;
     background: transparent;
 } 
+nav{
+    margin-top: 10px;
+}
 .logo{
-  width: 10rem;
-  height: 5rem;
+  width: 6rem;
+  height: 4rem;
 }
 .nav-list{
     display: flex;
