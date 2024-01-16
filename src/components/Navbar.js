@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import logo from './logo.png'
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 // import CloseIcon from '@mui/icons-material/Close';
 export default class Navbar extends Component {
   handleClick=()=>{
@@ -12,8 +12,6 @@ export default class Navbar extends Component {
     
     return (
       <>
-        
-       
         <ul className='side-bar'>
         <li ><Link className="sidebar-link" to="/">Home</Link></li >
         <li ><Link className="sidebar-link" to="/about">About</Link></li>
@@ -37,12 +35,12 @@ export default class Navbar extends Component {
         <li className='list-items blog-class'>
           <Link className='link' to="/blog">Blog</Link>
         </li>
-        <li onClick={this.handleClick} className='menu-icon'>
+        {/* <li onClick={this.handleClick} className='menu-icon'>
           <a href='/'><MenuIcon/></a>
-        </li>
+        </li> */}
         </ul>
         </nav>
-      </>
+      </> 
     )
   } 
 }
