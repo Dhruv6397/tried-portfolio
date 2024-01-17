@@ -9,11 +9,8 @@
 .main-container{
     height: 100%;
     width: 100%;
-    min-width: 100vh;
-    min-height: 100vh;
-    
-    background-color: rgb(0, 0, 0);
     background: url('Desktop1.svg') center/cover no-repeat fixed;
+    min-height: 100vh;
     position: flex;
 } 
 .section-class{
@@ -97,17 +94,21 @@ margin-bottom: 40px;
     .main-page-content{
         margin-left:20% ;
     }
-    .main-page-content h1,h4,h5,p{
+    .main-page-content h1,h4{
         color: white;
     }
     .main-page-content p{
         color: white;
     }
+    .main-page-content h5{
+        color: white;
+    }
     .MyPicClass{
         display: none;
+        
     }
     .MyPicClassMobile{
         display: contents;
-        margin-top: 50px;
+        padding: 50px;
     }
 }
