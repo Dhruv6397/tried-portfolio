@@ -111,10 +111,11 @@ margin-bottom: 40px;
     }
     .MyPicClassMobile{
         display: contents;
+        margin-right: 0;
     }
     .MyPicClassMobile img{
         height: 350px;
         width: 350px;
-        padding: 100px 0 0 100px;
+        padding: 100px 0 0 60px;
     }
 }
