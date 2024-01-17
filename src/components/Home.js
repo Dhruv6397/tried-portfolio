@@ -11,6 +11,9 @@ export default class Home extends Component {
     return (
       <>
         <div className='main-container'>
+                <div className='MyPicClassMobile'>
+                    <img src={MyPic} alt='My Profile pic'></img>
+                </div>
           <section className='section-class'>
             <div className='main-page-content'>
                 <h5 className='txt'>Hey! there</h5>
@@ -19,8 +22,8 @@ export default class Home extends Component {
                 <p className='txt'><span className='nwrap'>Part time student,</span> <br/><span className='nwrap'> Full time developer.</span></p>
             </div>
             <div className='MyPicClass'>
-            <img src={MyPic} alt='My Profile pic'></img>
-          </div>
+              <img src={MyPic} alt='My Profile pic'></img>
+            </div>
           </section> 
           
 
