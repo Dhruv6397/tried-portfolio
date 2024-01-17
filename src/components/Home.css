@@ -10,7 +10,8 @@
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: url('bg.svg') center/cover no-repeat fixed;
+    background: url('Desktop1.svg') center/cover no-repeat fixed;
+    /* background-color: white; */
     position: relative;
 }
 .section-class{
@@ -38,28 +39,28 @@ section{
 .main-page-content h5{
 font-size: 20px;
 font-weight: 400px;
-color: rgb(56, 76, 188);
+color: #333333;
 margin-bottom: 40px;
 }
 .main-page-content h1{
     font-family: 'Permanent Maker',cursive;
     font-size: 90px;
     line-height: 1;
-    color: rgb(187, 91, 91);
+    color: rgba(0, 0, 0, 0.893);
     margin:  0 0 45px;
 }
 .main-page-content h4{
     
     font-size: 25px;
     font-weight: 600;
-    color: rgb(138, 166, 53);
+    color: rgb(244, 246, 239);
     margin-bottom: 10px;
 }
 
 .main-page-content p{  
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.9;
-    color: rgb(71, 60, 145);
+    color: #000080;
     margin-bottom: 40px;
 }
 .txt{
@@ -69,6 +70,14 @@ margin-bottom: 40px;
 .txt:hover {
     background:transparent;
     transform: translateX(8px);
+}
+.MyPicClass{
+    /* margin-inline-end: 20px; */
+    margin-left: auto;
+    
+}
+.MyPicClass:hover{
+    transform: translateX(5px);
 }
 .icons{
     position: absolute;
@@ -80,13 +89,14 @@ margin-bottom: 40px;
     display: block;
     margin: 26px 0;
     font-size: 24px;
-    color:rgb(24, 29, 4);
+    color:rgb(0, 0, 0);
     transition: all .50s ease;
 }
 .icons .media-icons:hover{
-    color: #4d9559;
+    color: #ffffff;
     transform: translateY(-5px);
 }
+
 
 @media screen and (max-width:800px) {
     .main-page-content{

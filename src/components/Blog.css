@@ -10,6 +10,7 @@
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: url('blackBg.svg') center/cover no-repeat fixed;
+    /* background: url('blackBg.svg') center/cover no-repeat fixed; */
+    background-color: white;
     position: relative;
 }
