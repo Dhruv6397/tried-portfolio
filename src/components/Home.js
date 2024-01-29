@@ -13,7 +13,7 @@ export default class Home extends Component {
         <div className='main-container'>
                 <div className='MyPicClassMobile'>
                     <img src={MyPic} alt='My Profile pic'></img>
-                </div>
+                </div> 
           <section className='section-class'>
             <div className='main-page-content'>
                 <h5 className='txt'>Hey! there</h5>

@@ -9,7 +9,9 @@
 .main-container{
     height: 100%;
     width: 100%;
-    background: url('Desktop1.svg') center/cover no-repeat fixed;
+    /* background: url('Desktop1.svg') center/cover no-repeat fixed; */
+    background: rgb(212, 212, 99) center/cover no-repeat fixed;
+
     min-height: 100vh;
     position: flex;
 } 
