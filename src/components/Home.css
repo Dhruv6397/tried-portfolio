@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Protest+Revolution&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -9,11 +11,10 @@
 .main-container{
     height: 100%;
     width: 100%;
-    /* background: url('Desktop1.svg') center/cover no-repeat fixed; */
-    background: rgb(212, 212, 99) center/cover no-repeat fixed;
+    background: #161616 center/cover no-repeat fixed;
 
     min-height: 100vh;
-    position: flex;
+    display: flex;
 } 
 .section-class{
     height: 100%;
@@ -22,55 +23,48 @@
     display: flex;
     align-items: center;
 }
-.nwrap{
-    white-space: nowrap;
-}
+
 section{
     padding: 0 19%;
 }
 .main-page-content h5{
-font-size: 20px;
+font-size: 1.5em;
 font-weight: 400px;
-color: #333333;
+color: #ffffff;
 margin-bottom: 40px;
 }
 .main-page-content h1{
-    font-family: 'Permanent Maker',cursive;
-    font-size: 90px;
+    font-family: "Protest Revolution", sans-serif;
+    /* font-family: "Acme", sans-serif; */
+    font-size: 15em;
     line-height: 1;
-    color: rgba(0, 0, 0, 0.893);
-    margin:  0 0 45px;
+    color: #ECDBBA;
+    margin:  0 0 10% 27%;
+    text-shadow: 10px 10px 10px #346751;
+    
+}
+.main-page-content h1:hover{
+    text-shadow: 10px 10px 10px #673434;
 }
 .main-page-content h4{
     
-    font-size: 25px;
+    font-size: 1.7em;
     font-weight: 600;
     color: rgb(244, 246, 239);
     margin-bottom: 10px;
 }
 
-.main-page-content p{  
-    font-size: 30px;
-    line-height: 1.9;
-    color: #000080;
-    margin-bottom: 40px;
-}
+
 .txt{
     user-select: none;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.491);
+    
 }
 .txt:hover {
     background:transparent;
     transform: translateX(8px);
 }
-.MyPicClass{
-    /* margin-inline-end: 20px; */
-    margin-left: auto;
-    
-}
-.MyPicClass:hover{
-    transform: translateX(5px);
-}
+
+
 .icons{
     position: absolute;
     top: 50%;
@@ -81,43 +75,40 @@ margin-bottom: 40px;
     display: block;
     margin: 26px 0;
     font-size: 24px;
-    color:rgb(0, 0, 0);
+    color:#ffffff;
     transition: all .50s ease;
 }
 .icons .media-icons:hover{
-    color: #ffffff;
+    color: #c94141;
     transform: translateY(-5px);
 }
 
-.MyPicClassMobile{
-    display: none;
-}
+
 @media screen and (max-width:800px) {
+    .main-container{
+        height: 100vh;
+    }
     .main-page-content{
-        margin-left:20% ;
+        margin-left:23% ;
         margin-top: 0;
         padding-top: 0;
     }
     .main-page-content h1,h4{
         color: white;
     }
-    .main-page-content p{
-        color: white;
-    }
     .main-page-content h5{
         color: white;
     }
-    .MyPicClass{
-        display: none;
-        
+    .main-page-content h1{
+        font-size: 5em;
+        text-shadow: 3px 2px 5px #346751;
+        padding:0;
+        margin: 0;
     }
-    .MyPicClassMobile{
-        display: contents;
-        margin-right: 0;
+    .section-class{
+        border: 2px solid red;
+        padding: 0;
+        margin: 0;
     }
-    .MyPicClassMobile img{
-        height: 350px;
-        width: 350px;
-        padding: 100px 0 0 60px;
-    }
+   
 }

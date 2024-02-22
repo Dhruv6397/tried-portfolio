@@ -1,23 +1,29 @@
-import React, { Component } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import logo from './logo.png'
-// import MenuIcon from '@mui/icons-material/Menu';
-// import CloseIcon from '@mui/icons-material/Close';
-export default class Navbar extends Component {
-  handleClick=()=>{
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
-  };
-  render() {
-     
-    return (
-      <>
-        <ul className='side-bar'>
-        <li ><Link className="sidebar-link" to="/">Home</Link></li >
-        <li ><Link className="sidebar-link" to="/about">About</Link></li>
-        <li ><Link className="sidebar-link" to="/blog">Projects</Link></li>
-        <li><Link className="sidebar-link" to="/blog">Blog</Link></li>
-        </ul>
+
+export default function Navbar() {
+  
+  const [sideNavToggle,setSideNavToggle]=useState(true)
+  useEffect(()=>{
+    console.log(sideNavToggle)
+
+  },[sideNavToggle])
+  return (
+    <>
+        <div className='side-navbar'>
+          <div  className='menu-icon' onClick={()=>setSideNavToggle(!sideNavToggle)}>{sideNavToggle?console.log("s"):console.log("n")}</div>
+          <ul className={sideNavToggle?'show-side-bar ':'hide-side-bar'}>
+                <li ><Link className="sidebar-link" to="/">Home</Link></li >
+                <li ><Link className="sidebar-link" to="/about">About</Link></li>
+                <li ><Link className="sidebar-link" to="/blog">Projects</Link></li>
+                <li><Link className="sidebar-link" to="/blog">Blog</Link></li>
+          </ul>
+        </div>
         
 
         <nav>
@@ -35,13 +41,10 @@ export default class Navbar extends Component {
         <li className='list-items blog-class'>
           <Link className='link' to="/blog">Blog</Link>
         </li>
-        {/* <li onClick={this.handleClick} className='menu-icon'>
-          <a href='/'><MenuIcon/></a>
-        </li> */}
+        
         </ul>
         </nav>
-      </> 
-    )
-  } 
+
+      </>
+  )
 }
- 
