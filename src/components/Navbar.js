@@ -9,14 +9,11 @@ import CloseIcon from '@mui/icons-material/Close';
 export default function Navbar() {
   
   const [sideNavToggle,setSideNavToggle]=useState(true)
-  useEffect(()=>{
-    console.log(sideNavToggle)
-
-  },[sideNavToggle])
+  
   return (
     <>
         <div className='side-navbar'>
-          <div  className='menu-icon' onClick={()=>setSideNavToggle(!sideNavToggle)}>{sideNavToggle?console.log("s"):console.log("n")}</div>
+          {/* <div  className='menu-icon' onClick={()=>setSideNavToggle(!sideNavToggle)}>{sideNavToggle?console.log("s"):console.log("n")}</div> */}
           <ul className={sideNavToggle?'show-side-bar ':'hide-side-bar'}>
                 <li ><Link className="sidebar-link" to="/">Home</Link></li >
                 <li ><Link className="sidebar-link" to="/about">About</Link></li>
